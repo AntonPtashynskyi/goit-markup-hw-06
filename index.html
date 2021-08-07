@@ -479,6 +479,24 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-block">
+          <p class="footer-social-tittle">Подпишитесь на рассылку</p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              name="email-sub"
+              placeholder="E-mail"
+              class="input-mail"
+              required
+            />
+            <button type="submit" class="subscribe-btn">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -489,8 +507,49 @@
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
+        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form class="modal-form">
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="form-field">
+            <label for="annotate">Комментарий</label>
+            <textarea
+              name="annotate"
+              id="annotate"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            value="agreement"
+          />
+          <label for="agreement" class="agreement"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="agreement-link">Условия договора</a></label
+          >
+          <button type="submit" class="send-btn">Отправить</button>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
