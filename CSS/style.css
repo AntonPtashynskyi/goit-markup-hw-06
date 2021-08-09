@@ -837,6 +837,7 @@ body {
 
 .modal-form {
   display: inline-block;
+  width: 100%;
 }
 
 .back-drop .modal {
@@ -858,7 +859,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button {
+.modal-close-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -879,9 +880,17 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-close-button:hover,
+.modal-close-button:focus {
   fill: var(--accent-button-color);
+}
+
+/* Form field  */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .modal-tittle {
@@ -897,39 +906,31 @@ body {
   text-align: center;
 }
 
-.form-field {
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 10px;
-}
-
-.form-field:nth-child(4) {
+.form-field:nth-child(5) {
   margin-bottom: 20px;
 }
 
-.form-field input,
-.form-field textarea {
+.form-input {
+  height: 40px;
+  margin: 0;
+  padding: 12px 12px 12px 42px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.form-field input {
-  margin: 0;
-  padding: 12px 12px 12px 42px;
-}
-
-.form-field textarea {
+.textarea-annotate {
   padding: 12px 16px;
   height: 120px;
   resize: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.form-field textarea::placeholder {
+.form-field .textarea-annotate::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field label {
+.form-label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -938,6 +939,10 @@ body {
 }
 
 .send-btn {
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 10px 55px;
+
   min-width: 200px;
   height: 50px;
   border-style: none;
@@ -950,9 +955,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
 
-  margin-top: 30px;
-  padding: 10px 55px;
-
   letter-spacing: 0.06em;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -962,3 +964,25 @@ body {
 .send-btn:focus {
   background-color: var(--primery-button-accent-color);
 }
+
+.agreement {
+  display: inline-block;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.agreement > .agreement-link {
+  color: #2196f3;
+}
+
+/* Добавить inline SVG  в div. form-fieal абсолютно 
+спозеционировать относительно этого дива 
+
+видео 34:00 минута
+
+Поменять местами lable и input чтобы можно было применить селектор "+"
+для применеия fouse на input и lable, а также изменения цвета иконки.
+
+При таком изменеии надо будет абсолютно спозиционировать наш текст 
+который находиться в lable
+*/
