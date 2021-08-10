@@ -512,18 +512,44 @@
           <h2 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-field">
             <label for="name" class="form-label">Имя</label>
-            <input type="text" name="name" id="name" class="form-input" />
-            <span class="modal-icon"></span>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-input"
+              autocomplete="off"
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#persone"></use>
+            </svg>
           </div>
 
           <div class="form-field">
             <label for="tel" class="form-label">Телефон</label>
-            <input type="tel" name="tel" id="tel" class="form-input" />
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="form-input"
+              autocomplete="off"
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#phone"></use>
+            </svg>
           </div>
 
           <div class="form-field">
             <label for="mail" class="form-label">Почта</label>
-            <input type="email" name="mail" id="mail" class="form-input" />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              class="form-input"
+              autocomplete="off"
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#envelope"></use>
+            </svg>
           </div>
 
           <div class="form-field">
@@ -537,14 +563,14 @@
             ></textarea>
           </div>
 
-          <input
-            type="checkbox"
-            name="agreement"
-            id="agreement"
-            value="agreement"
-          />
-          <label for="agreement" class="agreement"
-            >Соглашаюсь с рассылкой и принимаю
+          <label for="agreement" class="agreement">
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              value="agreement"
+            />
+            Соглашаюсь с рассылкой и принимаю
             <a href="#" class="agreement-link">Условия договора</a></label
           >
           <button type="submit" class="send-btn">Отправить</button>
