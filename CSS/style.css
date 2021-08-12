@@ -984,8 +984,9 @@ body {
   margin-bottom: 30px;
 }
 
-.agreement > .agreement-link {
+.agreement-link {
   color: #2196f3;
+  margin-left: 4px;
 }
 
 .modal-icon {
@@ -998,4 +999,49 @@ body {
 
 .form-input:focus-within + .modal-icon {
   fill: #188ce8;
+}
+
+.check-agreenent {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreement-box {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.lable-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid var(--tittle-text-color);
+  border-radius: 2px;
+
+  transition: background-color 250ms var(--main-transition-time),
+    box-shadow 250ms var(--main-transition-time);
+}
+
+.check-agreenent:checked + .checkbox-icon {
+  background-color: var(--accent-button-color);
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
 }

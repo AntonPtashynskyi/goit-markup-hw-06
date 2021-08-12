@@ -563,16 +563,22 @@
             ></textarea>
           </div>
 
-          <label for="agreement" class="agreement">
-            <input
-              type="checkbox"
-              name="agreement"
-              id="agreement"
-              value="agreement"
-            />
-            Соглашаюсь с рассылкой и принимаю
-            <a href="#" class="agreement-link">Условия договора</a></label
-          >
+          <div class="agreement-box">
+            <label for="agreement" class="lable-agreement">
+              <input
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+                value="agreement"
+                class="check-agreenent"
+              />
+              <svg class="checkbox-icon">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="agreement-link">Условия договора</a>
+            </label>
+          </div>
           <button type="submit" class="send-btn">Отправить</button>
         </form>
       </div>
