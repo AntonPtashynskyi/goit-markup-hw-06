@@ -1040,6 +1040,10 @@ body {
     box-shadow 250ms var(--main-transition-time);
 }
 
+.check-agreenent:focus + .checkbox-icon {
+  border: 2px solid var(--accent-button-color);
+}
+
 .check-agreenent:checked + .checkbox-icon {
   background-color: var(--accent-button-color);
   border-radius: 2px;
